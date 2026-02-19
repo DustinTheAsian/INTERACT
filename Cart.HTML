@@ -8,17 +8,27 @@
 <body>
     <button onclick="console.log(`storage is: ${Count}`)">Cart Quantity</button>
 
-    <button onclick="Count += 1;
+    <button onclick = "Count ++;
     console.log(`Storage is ${Count}`)">Add</button>
     
-    <button onclick="Count += 2;
+    <button onclick = "Count += 2;
     console.log(`Storage is ${Count}`)">Add 2</button>
 
     <button onclick="Count = 0;
     console.log(`Storage is ${Count}`)">Reset</button>
 
+    <button onclick="check()">Click Me!</button>
+
     <script>
         let Count = 0;
+
+        function check(){
+            if (2 > 3){
+                console.log("GYMSHARK!!!");
+            }else{
+                console.log("NOOOO!!!");
+            }
+        }
     </script>
 </body>
 </html>
